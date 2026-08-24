@@ -1,0 +1,17 @@
+public class LinearSearchSpaceComplexity {
+    public static int search(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {8, 61, 2, 3, 4, 0};
+
+        System.out.println(search(arr, 4));
+        System.out.println("Auxiliary Space: O(1)");
+    }
+}
